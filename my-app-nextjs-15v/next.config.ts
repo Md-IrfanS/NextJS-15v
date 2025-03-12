@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    appDir: true,  // If you're using the new app directory
+    turbo: true,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
